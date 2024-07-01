@@ -51,7 +51,7 @@ BEGIN
 
     IF @DataFrom > @DateTo
     BEGIN
-        RAISERROR('DataFrom musi być wcześniejsza lub równa DateTo', 16, 1);
+        RAISERROR('DataFrom musi być wcześniejsza od DateTo', 16, 1);
         RETURN;
     END
   
